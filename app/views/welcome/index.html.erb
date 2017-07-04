@@ -1,0 +1,10 @@
+<%= content_for :css do %>
+  <%= stylesheet_pack_tag 'welcome' %>
+<% end %>
+
+<%= content_for :js do %>
+  <%= javascript_pack_tag "welcome" %>
+  <script>
+    App.init(<%= {name: 'eggman.tv'}.to_json.html_safe %>)
+  </script>
+<% end %>

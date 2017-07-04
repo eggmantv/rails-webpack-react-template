@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsWebpackReactTemplate</title>
+    <%= csrf_meta_tags %>
+    
+    <%= yield :css %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <%= javascript_pack_tag 'application' %>
+    <%= yield :js %>
+  </body>
+</html>
